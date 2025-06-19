@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudia en el Extranjero</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="flags-background"></div>
+        <div class="header-content">
+            <h1>Estudia en el Extranjero</h1>
+            <div class="nav-buttons">
+                <button class="nav-button active" data-section="inicio">Inicio</button>
+                <button class="nav-button" data-section="programas">Programas</button>
+                <button class="nav-button" data-section="testimonios">Testimonios</button>
+                <button class="nav-button" data-section="contacto">Contacto</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="content-section active-section">
+           <div class="slider-container">
+  <div class="slider">
+    <div class="slide active">
+      <img src="img/Banderas del mundo.jpg" alt="Banderas del mundo">
+    </div>
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Aula de clases">
+    </div>
+  <div class="slide">
+    <img src="img/graduacion.jpg" alt="graduacion">
+  </div>
+  </div>
+  <div class="slider-nav">
+    <span class="slider-dot active" data-index="0"></span>
+    <span class="slider-dot" data-index="1"></span>
+    <span class="slider-dot" data-index="2"></span>
+  </div>
+</div>
+
+            <div class="info-section">
+                <div class="career-info">
+                    <h2>Licenciatura en Lenguas Extranjeras</h2>
+                    <p>Programa académico diseñado para formar profesionales en el dominio de idiomas con enfoque intercultural y oportunidades globales.</p>
+                </div>
+                
+                <div class="info-cards">
+                    <div class="info-card" onclick="openModal('study-modal')">
+                        <h3>¿Dónde puedo estudiar?</h3>
+                        <p>Universidades nacionales e internacionales asociadas</p>
+                    </div>
+                    <div class="info-card" onclick="openModal('career-modal')">
+                        <h3>¿Qué puedo hacer?</h3>
+                        <p>Oportunidades profesionales al graduarte</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Programas -->
+        <section id="programas" class="content-section">
+            <div class="section-content">
+                <h2>Nuestros Programas</h2>
+                <div class="programs-container">
+                    <div class="program-card">
+                        <h3><i class="fas fa-exchange-alt"></i> Intercambio Estudiantil</h3>
+                        <ul>
+                            <li>Duración: 6-12 meses</li>
+                            <li>15 países disponibles</li>
+                            <li>Reconocimiento de créditos</li>
+                        </ul>
+                    </div>
+                    <div class="program-card">
+                        <h3><i class="fas fa-graduation-cap"></i> Licenciatura Completa</h3>
+                        <ul>
+                            <li>Duración: 4 años</li>
+                            <li>Doble titulación internacional</li>
+                            <li>Becas disponibles</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Testimonios -->
+        <section id="testimonios" class="content-section">
+            <div class="section-content">
+                <h2>Testimonios Reales</h2>
+                <div class="testimonials-container">
+                    <div class="testimonial-card">
+                        <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="María González">
+                        <div class="testimonial-content">
+                            <p>"El intercambio en Francia me permitió dominar el francés y ahora trabajo como traductora para la ONU."</p>
+                            <div class="testimonial-author">
+                                <strong>María González</strong>
+                                <span>Traductora - Bogotá, Colombia</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Carlos Mendoza">
+                        <div class="testimonial-content">
+                            <p>"Gracias al programa de doble titulación, trabajo en una multinacional en Alemania."</p>
+                            <div class="testimonial-author">
+                                <strong>Carlos Mendoza</strong>
+                                <span>Ejecutivo - Hamburgo, Alemania</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="content-section">
+            <div class="section-content">
+                <h2>Contacto Directo</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3><i class="fas fa-info-circle"></i> Información</h3>
+                        <p><i class="fas fa-envelope"></i> aranzatheurel@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +52 55 1234 5678</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Av. Universidad 300, CDMX</p>
+                    </div>
+                    <form class="contact-form">
+                        <h3><i class="fas fa-paper-plane"></i> Escríbenos</h3>
+                        <div class="form-group">
+                            <input type="text" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="4" placeholder="Tu mensaje" required></textarea>
+                        </div>
+                        <button type="submit">Enviar Mensaje <i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modales Informativos -->
+    <div id="study-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('study-modal')">&times;</span>
+            <h2>Instituciones Asociadas</h2>
+            <ul>
+                <li>Universidad Nacional Autónoma de México</li>
+                <li>Universidad de Salamanca (España)</li>
+                <li>Sorbonne Université (Francia)</li>
+                <li>University of Toronto (Canadá)</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="career-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('career-modal')">&times;</span>
+            <h2>Campos Laborales</h2>
+            <ul>
+                <li>Traducción e interpretación</li>
+                <li>Docencia de idiomas</li>
+                <li>Relaciones internacionales</li>
+                <li>Turismo y hotelería</li>
+                <li>Comercio exterior</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
